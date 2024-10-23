@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Designer</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <p>Form designer</p>
+        <button class="save-btn" id="saveForm">Save</button>
+      </header>
+      <div class="form-designer">
+        <aside class="sidebar">
+          <h2>Components</h2>
+          <ul>
+            <li>
+              <span>Input</span>
+              <button class="add-btn" id="addInput">+</button>
+            </li>
+            <li>
+              <span>Select</span>
+              <button class="add-btn" id="addSelect">+</button>
+            </li>
+            <li>
+              <span>Textarea</span>
+              <button class="add-btn" id="addTextarea">+</button>
+            </li>
+          </ul>
+        </aside>
+        <section class="form-preview styles">
+          <div class="form-box" id="formContainer">
+            <div class="form-element">
+              <label for="input1">Sample Label</label>
+              <input type="text" id="input1" placeholder="Sample placeholder" />
+              <button class="delete-btn">🗑</button>
+            </div>
+
+            <div class="form-element">
+              <label for="select1">Select</label>
+              <select id="select1">
+                <option>Sample option 1</option>
+                <option>Sample option 2</option>
+                <option>Sample option 3</option>
+              </select>
+              <button class="delete-btn">🗑</button>
+            </div>
+            <div class="form-element">
+              <label for="textarea1">Text area</label>
+              <textarea
+                id="textarea1"
+                placeholder="Sample placeholder"
+              ></textarea>
+              <button class="delete-btn">🗑</button>
+            </div>
+            <div class="form-element">
+              <label for="input2">Sample Label</label>
+              <input type="text" id="input2" placeholder="Sample placeholder" />
+              <button class="delete-btn">🗑</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
